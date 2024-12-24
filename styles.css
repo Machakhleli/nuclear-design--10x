@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+header {
+    position: absolute;
+
+    top: 40px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+header span {
+    width: 78px;
+    height: 35px;
+    font-family: Gilroy-Bold;
+    font-size: 28px;
+    line-height: 32.81px;
+    color: #FFFFFF;
+    margin-left: 80px;
+}
+
+.list-wrapper {
+    width: 478px;
+    height: 22px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+    font-family: Gilroy-Medium;
+    font-size: 18px;
+    line-height: 21.09px;
+
+}
+/* select{
+    display: none;
+} */
+li .dropdown {
+    width: 18px;
+    height: 18px;
+    rotate: 90 deg;
+    margin-left: 8px;
+
+}
+
+/* main */
+#main {
+    background-image: url(./media/Rectangle\ 1441.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
