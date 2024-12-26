@@ -7,6 +7,7 @@
 /* header */
 header {
     position: absolute;
+    z-index: 1;
     top: 40px;
     left: 0;
     right: 0;
@@ -24,6 +25,7 @@ header span {
     margin-left: 80px;
     cursor: pointer;
 }
+
 li .dropdown {
     width: 18px;
     height: 18px;
@@ -44,25 +46,29 @@ li .dropdown {
     font-size: 18px;
     line-height: 21.09px;
 }
-.cta-list{
+
+.cta-list {
     cursor: pointer;
 }
-.nav-img-wrapper{
+
+.nav-img-wrapper {
     width: 34px;
     height: 34px;
     position: relative;
-   
+
 }
-.bag-img{
+
+.bag-img {
     width: 25.5px;
     height: 28.33px;
     cursor: pointer;
 }
-.group-img{
+
+.group-img {
     width: 20px;
     height: 25.24px;
     position: absolute;
-    left:15px;
+    left: 15px;
 }
 
 
@@ -71,21 +77,84 @@ li .dropdown {
     background: url(./media/Rectangle\ 1441.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100vh;   
-}
-#main h1{
-width: 861px;
-height: 208px;
-font-weight: 400;
-font-size: 80px;
-line-height: 104px;
-color: #FFFFFF;
-margin-left: auto;
-margin-right: auto;
+    height: 100vh;
+    min-height: 1084px;
+    display: flex;
+    justify-content: center;
+    position: relative;
 
 }
+
+.main-wrapper {
+    position: absolute;
+    top: 161px;
+    left: auto;
+    right: auto;
+    width: 861px;
+    height: 345px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.main-wrapper h1 {
+    width: 861px;
+    height: 208px;
+    font-family: Gilroy-Bold;
+    font-size: 80px;
+    line-height: 104px;
+    letter-spacing: -1px;
+}
+
+.main-wrapper p {
+    width: 606px;
+    height: 76px;
+    text-align: center;
+    margin-top: 14px;
+    opacity: 80%;
+    font-family: Gilroy-Regular;
+    font-size: 24px;
+    line-height: 38.4px;
+}
+
+.main-btn {
+    width: 344px;
+    height: 56px;
+    margin-top: 45px;
+    border-radius: 99px;
+    background: #FFFFFF26;
+    border: 0.86px solid #FFFFFF99;
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-btn input {
+    background: none;
+    border: none;
+    border-radius: 99px;
+    width: 100%;
+    height: 100%;
+    padding: 8px 8px 8px 20px;
+    outline-width: 0;
+}
+
+.main-btn img {
+    cursor: pointer;
+}
+
+.pot-circle {
+    width: 18px;
+    height: 18px;
+    border: 1px solid red;
+    margin-top: 700px;
+    /* position: absolute; */
+}
+
+
 
 /* choose wrapper sectio */
 .choose-wrapper {
