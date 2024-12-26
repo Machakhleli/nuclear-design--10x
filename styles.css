@@ -77,11 +77,12 @@ li .dropdown {
     background: url(./media/Rectangle\ 1441.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: 100vh;
     min-height: 1084px;
     display: flex;
     justify-content: center;
-    position: relative;
+    /* position: relative; */
 
 }
 
@@ -147,16 +148,48 @@ li .dropdown {
 }
 
 .pot-circle {
-    width: 18px;
-    height: 18px;
+    width: 10.29px;
+    height: 10.29px;
     border: 1px solid red;
-    margin-top: 700px;
-    /* position: absolute; */
+    margin-top: 800px;
+    margin-left: -1450px;
+    background-color: #b92c2c;
+    border-radius: 50%;
+    position: relative;
 }
+.colors{
+    border: 2px solid #ffffff17;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transform:scale3d() 0.3s;
+    position: absolute;
+    overflow: hidden;
+
+}
+.click-scale{
+    backdrop-filter: blur(8px);
+    
+}
+.click-scale:active{
+    transform: scale(1.5);
+}
+/* .colors::before{
+    content: "";
+    position: absolute;
+    top:50%;
+    left:50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #FCFBF6;
+    transform: translate(-50%, -50%);
+} */
 
 
 
-/* choose wrapper sectio */
+/* choose wrapper section */
 .choose-wrapper {
     background-color: #F7F7F7;
     height: 420px;
