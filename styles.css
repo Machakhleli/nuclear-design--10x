@@ -1,3 +1,4 @@
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
 * {
     margin: 0;
     padding: 0;
@@ -127,6 +128,7 @@ li .dropdown {
 .main-btn {
     width: 344px;
     height: 56px;
+    padding: 8px 8px 8px 20px;
     margin-top: 45px;
     border-radius: 99px;
     background: #FFFFFF26;
@@ -135,6 +137,7 @@ li .dropdown {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .main-btn input {
@@ -143,12 +146,24 @@ li .dropdown {
     border-radius: 99px;
     width: 100%;
     height: 100%;
-    padding: 8px 8px 8px 20px;
+    padding: 8px 8px 8px 8px;
     outline-width: 0;
 }
 
-.main-btn img {
+.main-btn .search-container {
+    width: 40px;
+    height: 40px;
+    background-color: #E58411;
+    border-radius: 50%;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-icon img{
+    width: 18px;
+    height: 18px;
 }
 
 .pot-circle {
@@ -173,19 +188,6 @@ li .dropdown {
 .click-scale:active{
     transform: scale(2.5);
 }
-/* .colors::before{
-    content: "";
-    position: absolute;
-    top:50%;
-    left:50%;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: #FCFBF6;
-    transform: translate(-50%, -50%);
-} */
-
-
 
 /* choose wrapper section */
 .choose-wrapper {
@@ -194,4 +196,57 @@ li .dropdown {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 0 auto;
+}
+.choose-wrapper .main-text{
+    width: 242px;
+    height: 104px;
+
+}
+.choose-wrapper h2{
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 52px;
+    color: #1E1E1E;
+    
+}
+.text-content-wrapper{
+    display: flex;
+    gap: 28px;
+}
+.text-content-wrapper .content{
+    width: 284px;
+    height: 170px;
+}
+.content h3{
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.71px;
+    text-align: left;
+    margin-bottom: 20px;
+    
+}
+.content p{
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 29.6px;
+    color: #1E1E1E;
+    opacity: 80%;
+}
+.choose-btn{
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25.9px;
+    color: #E58411;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    
 }
