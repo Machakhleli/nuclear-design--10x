@@ -282,6 +282,7 @@ li .dropdown {
     width: 100%;
     height: 100vh;
     text-align: center;
+    background-color: #F7F7F7;
 }
 
 .best-seller-wrapper h2 {
@@ -313,52 +314,60 @@ li .dropdown {
     text-decoration: none;
 
 }
-.best-seller-wrapper ul li a:hover{
-    background-color:#FFFFFF;
+
+.best-seller-wrapper ul li a:hover {
+    background-color: #FFFFFF;
     padding: 4px 8px;
     cursor: pointer;
 }
-.best-seller-product{
-   
+
+.best-seller-product {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 42px;
     margin-top: 80px;
 }
-.product{
+
+.product {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap:6.09px;
+    gap: 6.09px;
 }
-.product-content{
+
+.product-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
-.product img{
+
+.product img {
     width: 217.9px;
     height: 255.9px;
     margin-bottom: 47.22px;
 }
-.product-content .furniture-type{
+
+.product-content .furniture-type {
     font-family: "Inter", serif;
     font-weight: 400;
     font-size: 16.76px;
     line-height: 20.28px;
     color: #8D8D8D;
 }
-.product-content h3{
+
+.product-content h3 {
     font-family: Inter;
     font-size: 21.33px;
     font-weight: 600;
     line-height: 25.81px;
     text-align: left;
 }
-.price{
+
+.price {
     width: 174px;
     height: 48.74px;
     display: flex;
@@ -366,7 +375,8 @@ li .dropdown {
     align-items: center;
     margin-top: 36.56px;
 }
-.price span{
+
+.price span {
     font-family: Inter;
     font-size: 21.33px;
     font-weight: 600;
@@ -374,20 +384,50 @@ li .dropdown {
     color: #0D1B39;
 
 }
-.price-btn{
+
+.price-btn {
     width: 48.74px;
     height: 48.74px;
-    background-color:#0D1B39 ;
+    background-color: #0D1B39;
     border-radius: 50%;
     border: none;
     cursor: pointer;
-       
+
 }
-.price-btn img{
+
+.price-btn img {
     width: 24.37px;
     height: 24.37px;
     margin-top: 12px;
 }
-.rating svg{
+
+.rating svg {
     cursor: pointer;
+}
+
+.left-scroll-arrow,
+.right-scroll-arrow {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    cursor: pointer;
+}
+.left-scroll-arrow:hover,
+.right-scroll-arrow:hover{
+    border: none;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    box-shadow: 0px 7.03px 19.53px 0px #0000000F;
+}
+
+.left-scroll-arrow {
+    position: absolute;
+    left: 180px
+}
+
+.right-scroll-arrow {
+    position: absolute;
+    right: 180px;
 }
