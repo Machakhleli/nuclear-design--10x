@@ -328,6 +328,7 @@ li .dropdown {
     align-items: center;
     gap: 42px;
     margin-top: 80px;
+    margin-bottom: 60px;
 }
 
 .product {
@@ -414,8 +415,9 @@ li .dropdown {
     text-align: center;
     cursor: pointer;
 }
+
 .left-scroll-arrow:hover,
-.right-scroll-arrow:hover{
+.right-scroll-arrow:hover {
     border: none;
     border-radius: 50%;
     background-color: #FFFFFF;
@@ -424,10 +426,74 @@ li .dropdown {
 
 .left-scroll-arrow {
     position: absolute;
-    left: 180px
+    left: 170px
 }
 
 .right-scroll-arrow {
     position: absolute;
     right: 180px;
+}
+
+.view-all-btn {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33.3px;
+    color: #E58411;
+    border: none;
+    background-color: transparent;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.view-all-btn:hover {
+    transform: scale(1.1);
+}
+/* section  experience wrapper*/
+.experience-wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    
+  
+}
+.top-background{
+    position: absolute;
+    width: 430px;
+    height: 422px;
+    background-color: red;
+    top: 100px;
+    border-radius: 20px;
+
+}
+.right-background{
+    position: absolute;
+    width: 495px;
+    height: 301px;
+    background-color: red;
+    background-size: ;
+  
+}
+.experience-img{
+    position: absolute;
+    width: 639px;
+    height: 445px;
+    top: 306px;
+    left: -27px;
+    background-image: url(./media/sofa-exp.png);
+    background-repeat: no-repeat;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    backdrop-filter: blur(50px);
+}
+.experiance-content{
+    width: 556px;
+    /* margin: 0 auto; */
 }
