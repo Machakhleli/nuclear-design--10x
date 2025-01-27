@@ -453,47 +453,183 @@ li .dropdown {
 .view-all-btn:hover {
     transform: scale(1.1);
 }
+
 /* section  experience wrapper*/
-.experience-wrapper{
+.experience-wrapper {
+    position: relative;
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
-    
-  
+
 }
-.top-background{
+
+.top-background {
     position: absolute;
+    z-index: -2;
     width: 430px;
     height: 422px;
-    background-color: red;
-    top: 100px;
+    background-color: #F7F7F7;
+    top: -66px;
     border-radius: 20px;
 
 }
-.right-background{
+
+.right-background {
     position: absolute;
+    top: 72px;
+    right: -41px;
+    z-index: -2;
     width: 495px;
     height: 301px;
-    background-color: red;
-    background-size: ;
-  
+    background-color: #F7F7F7;
+    border-radius: 20px;
+
 }
-.experience-img{
+
+.bottom-background {
     position: absolute;
+    top: 22px;
+    z-index: -1;
+    width: 555px;
+    height: 423px;
+    border-radius: 49px;
+    box-shadow: 10px 30px 50px rgb(247, 213, 149);
+    margin-bottom: 270px;
+
+}
+
+.experience-img {
+    position: absolute;
+    z-index: 99;
     width: 639px;
     height: 445px;
     top: 306px;
-    left: -27px;
-    background-image: url(./media/sofa-exp.png);
-    background-repeat: no-repeat;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    backdrop-filter: blur(50px);
+
 }
-.experiance-content{
+
+.experience-wrapper .content-container {
     width: 556px;
-    /* margin: 0 auto; */
+    margin-left: 750px;
+    margin-right: 141px;
+    margin-top: 220px;
+
+}
+
+.content-container span {
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22.05px;
+    letter-spacing: 17.5%;
+    color: #E58411;
+
+}
+
+.content-container h3 {
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 52px;
+    margin-top: 20px;
+    color: #1E1E1E;
+}
+
+.content-container p {
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33.3px;
+    opacity: 80%;
+    columns: #1E1E1E;
+    margin-top: 20px;
+}
+
+.content-container .choose-btn {
+    margin-top: 24px;
+}
+
+/* section material wrapper */
+.materials-wrapper {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 470px;
+}
+
+.materials-wrapper .content-container {
+    width: 556px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.materials-img-wrapper {
+    height: 616px;
+    display: flex;
+    gap: 42px;
+    margin-left: 94px;
+}
+
+.materials-img-wrapper .materials-img-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.chair2 {
+    position: absolute;
+    z-index: -1;
+    top: 45px;
+    left: 20px;
+    width: 176px;
+    height: 183px;
+    border-radius: 29px;
+    opacity: 50%;
+    box-shadow: 10px 30px 50px rgba(172, 245, 239, 0.568);
+
+
+}
+
+.materials-img-wrapper .chairs {
+    position: relative;
+    margin-top: 139px;
+}
+
+.sofa2 {
+    position: absolute;
+    z-index: -1;
+    top: 275px;
+    left: 20px;
+    width: 176px;
+    height: 300px;
+    border-radius: 29px;
+    opacity: 50%;
+    box-shadow: 10px 30px 50px rgba(212, 202, 153, 0.568);
+}
+.chairs-top-backgroung{
+    position: absolute;
+    top:-66px;
+    z-index: -1;
+    width: 495px;
+    height: 422px;
+    background-color: #F7F7F7;
+    border-radius: 20px;
+}
+.chairs-bottom-backgroung{
+    position: absolute;
+    left:27px;
+    top: 10px;
+    z-index: -1;
+    width: 555px;
+    height: 423px;
+    background-color: red;
+    opacity: 50%;
+    box-shadow:10px 30px 50px rgba(245, 227, 145, 0.568);
 }
