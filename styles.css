@@ -1,25 +1,12 @@
 @import url('https://fonts.cdnfonts.com/css/gilroy-bold');
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/* font-family: 'Gilroy-Bold',
-sans-serif;
-font-family: 'Gilroy-Heavy',
-sans-serif;
-font-family: 'Gilroy-Light',
-sans-serif;
-font-family: 'Gilroy-Medium',
-sans-serif;
-font-family: 'Gilroy-Regular',
-sans-serif; */
-
-
 h2 {
     font-family: 'Gilroy-Bold', sans-serif;
     font-size: 42px;
@@ -680,8 +667,78 @@ li .dropdown {
 }
 .client-review-wrapper{
     width: 1180px;
-    height: 370px;
+    height: 502px;
+    margin: 0 auto;
+    margin-top: 60px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.client-review{
+    width: 370px;
+    height: 502px; 
+    background-repeat: no-repeat;
+    border-radius: 18px;
+}
+.client-review:first-child{
+    background-image: url(./media/yellow_chair.png);
+}
+.client-review:nth-child(2){
+    background-image: url(./media/archair.png);
+}
+.client-review:last-child{
+    background-image: url(./media/unsplash.png);
+}
+.client-review .content-wrapper{
+    position: relative;
+    background-image: url(./media/content-bg.png);
+    width: 334px;
+    height: 238px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 217px ;
+}
+.content-wrapper img:first-child{
+    position: absolute;
+    top: 0;
+    border-radius: 50%;
+    margin-bottom: 8px;
+}
+.content-wrapper h3{
+    font-family: "Abel", serif;
+    font-weight: 400;
+    font-size: 18px;    
+    line-height: 22.94px;
+    color: #1E1E1E;
+    margin-top: 70px;
+}
+.content-wrapper span{
+    font-family: "Abel", serif;
+    font-weight: 400;
+    font-size: 12px;    
+    line-height: 15.29px;
+    color: #1E1E1E;
+    opacity: 60%;
+    margin-top: 5px;
+}
+.content-wrapper p{
+    width: 252px;
+    height: 36px;
+    font-family: "Abel", serif;
+    font-weight: 400;
+    font-size: 14px;    
+    line-height: 17.84px;
+    color: #1E1E1E;
+    opacity: 80%;
+    margin-top: 21px;
+}
+.content-wrapper .rating{
+    width: 90px;
+    height: 14px;
+    margin-top: 37px;
+    
 }
